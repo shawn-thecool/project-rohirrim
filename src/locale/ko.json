@@ -1,0 +1,12 @@
+{
+  "login": {
+    "title":"로그인 페이지",
+    "label_email": "이메일",
+    "label_password": "비밀번호",
+    "btn_login": "로그인"
+  },
+  "bridge": {
+    "txt_greetings": "안녕하세요, {username}님!",
+    "label_selected": "선택된 사이트"
+  }
+}

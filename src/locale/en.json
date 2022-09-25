@@ -1,0 +1,12 @@
+{
+  "login": {
+    "title":"login page",
+    "label_email": "Email",
+    "label_password": "Password",
+    "btn_login": "Login"
+  },
+  "bridge": {
+    "txt_greetings": "Hello, {username}!",
+    "label_selected": "Selected site"
+  }
+}
