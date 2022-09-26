@@ -1,9 +1,10 @@
-import { useLookbookCreate, useLookbookDelete, useLookbooks, useLookbookUpdate } from '@/api'
+import { useLookbookCreate, useLookbookDelete, useLookbooks, useLookbookUpdate, useLookbookUpdateLikes } from '@/api'
 
 export default function PageLookbooks() {
   const { data: res = null } = useLookbooks()
   const createLookbook = useLookbookCreate()
   const updateLookbook = useLookbookUpdate()
+  const updateLookbookLikes = useLookbookUpdateLikes()
   const deleteLookbook = useLookbookDelete()
 
   return (
@@ -42,7 +43,7 @@ export default function PageLookbooks() {
               <button type="button" onClick={() => deleteLookbook.mutateAsync({ lookbookId: lookbook.id })}>
                 delete lookbook
               </button>
-              <button type="button" onClick={() => alert('TODO:')}>
+              <button type="button" onClick={() => updateLookbookLikes.mutateAsync({lookbookId:lookbook.id, userId:'user_id_3'})}>
                 add like lookbook
               </button>
               <button type="button" onClick={() => alert('TODO:')}>
